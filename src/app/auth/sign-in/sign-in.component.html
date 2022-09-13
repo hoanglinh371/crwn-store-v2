@@ -1,0 +1,13 @@
+<div class="sign-in-container">
+  <h2>Already have an account?</h2>
+  <span>Sign in with your email and password</span>
+
+  <form>
+    <app-input type="email" name="email" label="Email"></app-input>
+    <app-input type="password" name="password" label="Password"></app-input>
+    <div class="buttons-container">
+      <app-button type="submit">Sign In</app-button>
+      <app-button type="button" [google]="true">Google Sign In</app-button>
+    </div>
+  </form>
+</div>

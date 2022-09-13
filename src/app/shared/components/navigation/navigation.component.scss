@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  height: 70px;
+  font-size: 1rem;
+}
+
+.logo-container {
+  height: 100%;
+  padding: 10px;
+  width: 70px;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+
+  .nav-link {
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+
+.cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .item-count {
+    position: absolute;
+    font-size: 10px;
+    bottom: 12px;
+    font-weight: 700;
+  }
+}

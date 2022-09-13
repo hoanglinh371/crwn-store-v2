@@ -1,0 +1,7 @@
+<div class="input-group">
+  <input [formControl]="control" [type]="type" [id]="id" class="form-input" />
+  <label [for]="id" class="form-label" [ngClass]="{ shrink: control.value }">
+    {{ label }}
+  </label>
+  <p class="error-message"></p>
+</div>

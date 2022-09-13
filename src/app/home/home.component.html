@@ -1,0 +1,14 @@
+<div class="home-container">
+  <div class="directories">
+    <div class="directory-item" *ngFor="let directory of directories">
+      <div
+        class="bg-image"
+        [style.background-image]="'url(' + directory.imageUrl + ')'"
+      ></div>
+      <div class="directory-item-body">
+        <h2>{{ directory.title }}</h2>
+        <p>Shop Now</p>
+      </div>
+    </div>
+  </div>
+</div>

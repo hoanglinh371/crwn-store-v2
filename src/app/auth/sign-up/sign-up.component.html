@@ -1,0 +1,28 @@
+<div class="sign-up-container">
+  <h2>Don't have an account?</h2>
+  <span>Sign up with your email and password</span>
+
+  <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <app-input
+      [control]="signUpForm.controls.displayName"
+      label="Display Name"
+    ></app-input>
+    <app-input
+      type="email"
+      [control]="signUpForm.controls.email"
+      label="Email"
+    ></app-input>
+    <app-input
+      type="password"
+      [control]="signUpForm.controls.password"
+      label="Password"
+    ></app-input>
+    <app-input
+      type="password"
+      [control]="signUpForm.controls.confirmPassword"
+      label="Confirm Password"
+    ></app-input>
+
+    <app-button type="submit">Sign Up</app-button>
+  </form>
+</div>

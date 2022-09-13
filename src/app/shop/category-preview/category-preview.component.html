@@ -1,0 +1,11 @@
+<div class="category-preview__container" *ngFor="let i of categoryMap">
+  <h2 routerLink="/shop/{{ i.title }}" class="title">
+    {{ i.title | uppercase }}
+  </h2>
+  <div class="preview">
+    <app-product-card
+      *ngFor="let product of i.items | slice: 0:4"
+      [product]="product"
+    ></app-product-card>
+  </div>
+</div>
